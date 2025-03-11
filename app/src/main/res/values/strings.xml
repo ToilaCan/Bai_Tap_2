@@ -1,0 +1,38 @@
+<!--
+<resources>
+    <string name="app_name">Demo_Home</string>
+</resources>
+-->
+
+<!--<resources>
+<string name="app_name">Demo Home</string>
+<string name="title">THỰC HÀNH 01</string>
+<string name="label_name">Họ và tên</string>
+<string name="hint_name">Nhập họ và tên</string>
+<string name="label_age">Tuổi</string>
+<string name="hint_age">Nhập tuổi</string>
+<string name="btn_check">Kiểm tra</string>
+</resources>-->
+
+<resources>
+    <string name="app_name">Demo Home</string>
+    <string name="title">THỰC HÀNH 01</string>
+    <string name="label_name">Họ và tên</string>
+    <string name="hint_name">Nhập họ và tên</string>
+    <string name="label_age">Tuổi</string>
+    <string name="hint_age">Nhập tuổi</string>
+    <string name="btn_check">Kiểm tra</string>
+
+    <!-- Thông báo lỗi -->
+    <string name="error_empty_fields">Vui lòng nhập đầy đủ thông tin.</string>
+    <string name="error_invalid_age">Tuổi không hợp lệ. Vui lòng nhập số dương.</string>
+
+    <!-- Phân loại độ tuổi -->
+    <string name="category_old">Người già</string>
+    <string name="category_adult">Người lớn</string>
+    <string name="category_child">Trẻ em</string>
+    <string name="category_baby">Em bé</string>
+
+    <!-- Kết quả -->
+    <string name="result_message">%1$s thuộc nhóm: %2$s</string>
+</resources>

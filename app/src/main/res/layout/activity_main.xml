@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/textPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Họ và Tên -->
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="77dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="@string/label_name"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/hint_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tuổi -->
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="78dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center|left"
+        android:text="@string/label_age"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editName" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_bg"
+        android:hint="@string/hint_age"
+        android:inputType="number"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvAge"
+        app:layout_constraintTop_toBottomOf="@id/editName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nút Kiểm tra -->
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/btn_check"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/editAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
